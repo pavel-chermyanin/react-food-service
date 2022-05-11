@@ -13,12 +13,28 @@ code {
 }
 nav {
   padding: 0 1rem;
+  height: auto;
+}
+img,iframe {
+  max-width: 100%;
+}
+iframe{
+  width: 600px;
+  height: 350px;
+}
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
 }
 .nav-logo{
   font-size: 30px;
 }
 .nav-list a{
   font-size: 20px;
+}
+.nav-list{
+  display: flex;
+  justify-content: flex-end;
 }
 
 .content {
@@ -37,4 +53,11 @@ nav {
 }
 .card-content{
   flex-grow: 1;
+}
+
+
+@media(max-width: 500px) {
+  .nav-wrapper{
+   flex-direction: column;
+  }
 }

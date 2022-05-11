@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 
 const CategoryItem = (props) => {
     const {
-        idCategory: id,
         strCategory: name,
         strCategoryThumb: thumbnail,
         strCategoryDescription: description
@@ -20,7 +19,7 @@ const CategoryItem = (props) => {
             </div>
             <div className="card-action">
                 <Link
-                    to={'/category/' + id}
+                    to={'/category/' + name}
                     className="btn">
                     Watch category
                 </Link>
