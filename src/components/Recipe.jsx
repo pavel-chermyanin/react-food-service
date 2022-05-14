@@ -54,7 +54,7 @@ const Recipe = () => {
                     {recipe.strYoutube ? (
                         <div className="row">
                             <h5>Video Recipe</h5>
-                            <iframe title={id} src={'https://www.youtube.com/embed/' + recipe.strYoutube.slice(-11)} allowfullscreen />
+                            <iframe title={id} src={'https://www.youtube.com/embed/' + recipe.strYoutube.slice(-11)} />
                         </div>
                     ) : null}
                     

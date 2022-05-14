@@ -15,6 +15,11 @@ const Search = ({ cb = Function.prototype }) => {
         cb(value)
     }
 
+    const handleOnChange = (e) => {
+        setValue(e.target.value)
+        cb(e.target.value)
+    }
+
     return (
         <div className="row">
             <div className="input-field col s12">
@@ -23,7 +28,7 @@ const Search = ({ cb = Function.prototype }) => {
                     id="search-field"
                     placeholder="search"
                     onKeyDown={handleKey}
-                    onChange={(e) => setValue(e.target.value)}
+                    onChange={handleOnChange}
                     value={value}
                 />
                 <button
